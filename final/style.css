@@ -1,0 +1,517 @@
+@charset "utf-8";
+
+*{
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+	font-family: "IM Fell DW Pica", serif;
+	font-style: italic;
+	text-align: center;
+	font-weight: normal;
+}
+h1{
+	font-size: 3em;
+}
+h2{
+	font-size: 2.5em;
+}
+h3{
+	font-size: 1.5em;
+}
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 100px;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+  	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color:#B59B7A;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+	padding-right: 5%;
+}
+.navi {
+	display: flex;
+	font-family: "IM Fell DW Pica", serif;
+	list-style: none;
+    justify-content: space-between;
+    align-items: center;
+	gap: 5%;
+}
+.logo {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-top: 10px;
+	padding-left: 30px;
+}
+.navi a:link{
+	color: #474747;
+	text-decoration: none;
+	font-size: 1.25em;
+	font-weight: 300;
+}
+.navi a:hover{
+	color: #D9D9D9;
+	padding-bottom: 2%;
+	transition: 0.3s ease;
+}
+.navi a{
+	text-decoration: none;
+	color: #474747;
+}
+
+.containter{
+	width: 100%;
+	position: relative;
+}
+
+section{
+	min-height: 100vh;
+	width: 100%;
+	margin: auto;
+	position: relative;
+}
+
+#home {
+	background-image: url("images/home.jpg");
+	background-attachment: scroll;
+	background-size: cover;
+	width: 100%;
+	align-items: center;
+}
+#unveiled{
+	width: 85%;
+}
+.btnhome{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.item{
+	width: 120px;
+	border: 1px solid #474747;
+	margin-top: 30%;
+	text-align: center;
+}
+
+.item a{
+	color:#474747;
+	text-decoration: none;
+}
+
+.item:hover{
+	background-color: #B59B7A;
+	transition: 0.3s ease;
+	border-color: #B59B7A;
+	
+}
+
+.item a:hover{
+	color: #dfdfdf;
+	transition: 0.3s ease;
+}
+
+.column{
+	min-width: 40%;
+}
+
+.row {
+	display: flex;
+	gap: 5%;
+	justify-content: center;
+	align-content: center;
+	padding-bottom: 5%;
+}
+.profile {
+	width: 100%;
+	min-height: 300px;
+}
+.profile img{
+	width: 100%;
+	height: auto;
+}
+.column3{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+.column3 img {
+	width: 70%;
+	transition: transform 0.5s;
+}
+.column3 img:hover{
+	transform: translateY(-8px);
+}
+
+.column3 i{
+	margin-top: 150px;
+}
+.row2{
+	display: flex;
+	gap: 3%;
+	justify-content: center;
+	align-content: center;
+	background-color: #BDBEC2;
+	padding: 0 7% 4% 7%;
+}
+.center{
+	text-align: center;
+	font-family: "IM Fell DW Pica", serif;
+	gap: 3%;
+	font-size: 1.5em;
+	
+}
+.banner1{
+	width: 100%;
+	height: 150px;
+	background-color: #BDBEC2 ;
+	align-content: center;
+	align-items: center;
+}
+
+#disco{
+	width: 35%;
+}
+.col div span {
+	position: absolute;
+	bottom: -30px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 250px;
+	margin: 0;
+	padding: 0;
+	color: #B59B7A;
+	font-size: 1em;
+	text-decoration: none;
+	text-align: center;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+
+figure {
+	width: 250px;
+	height: 250px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+.gallery figure img {
+	filter: grayscale(100%);
+	transition: .3s ease-in-out;
+}
+.gallery figure:hover img {
+	filter: grayscale(0);
+}
+
+
+#tapestry {
+	background-image: url("images/longpond.jpg");
+	background-attachment: scroll;
+	background-size: contain;
+	background-position: center;
+	width: 100%;
+	align-items: center;
+}
+
+.item2{
+	width: 250px;
+	border: 1px solid #D9D9D9;
+	margin-top: 33%;
+	text-align: center;
+}
+
+.item2 a{
+	color: #D9D9D9;
+	text-decoration: none;
+}
+
+.item2:hover{
+	background-color: #BDBEC2;
+	transition: 0.3s ease;
+	
+}
+
+.item2 a:hover{
+	color: #474747;
+	transition: 0.3s ease;
+}
+
+#tapestryy {
+	width: 85%;
+}
+.interview{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	gap: 3%;
+	padding-top: 5%;
+}
+.interview img{
+	transition: transform 0.5s;
+}
+.interview img:hover{
+    transform: translateY(-5px);
+}
+.interview h1 {
+	text-align: left;
+}
+.gallery{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 50px;
+	position: relative;
+}
+.gallery img{
+	width: 100%;
+	transition: transform 0.5s;
+}
+.gallery img:hover{
+	transform: translateY(-8px);
+}
+.banner{
+	width: 100%;
+	height: 150px;
+	background-color: #B59B7A;
+	align-content: center;
+	align-items: center;
+}
+
+#swifties{
+	width: 85%;
+}
+.cardrow{
+	display: flex;
+	gap: 5%;
+	justify-content: center;
+	align-content: center;
+	margin-top: 5%;
+}
+.card{
+	width: 100%;
+	min-height: 100px;
+	align-items: left;
+	justify-content: center;
+	text-align: left;
+	background-color: #BDBEC2;
+	transition: transform 0.5s;
+}
+.card a{
+	text-decoration: none;
+	color: #474747;
+}
+.card:hover{
+	transform: translateY(-5px);
+}
+.card h3{
+	text-align: left;
+	bottom: 0;
+}
+.card img{
+	width: 100%;
+}
+.card-body{
+	padding: 2%;
+}
+.card p{
+	font-size: 0.8em;
+}
+
+.item3{
+	width: 120px;
+	border: 1px solid #474747;
+	text-align: center;
+	margin-top: 5%;
+}
+
+.item3 a{
+	color:#474747;
+	text-decoration: none;
+}
+
+.item3:hover{
+	background-color: #D9D9D9;
+	transition: 0.3s ease;
+	
+}
+
+.item3 a:hover{
+	color: #474747;
+	transition: 0.3s ease;
+}
+
+#cont{
+	width: 85%;
+	margin: auto;
+	background-image: url("images/header.png");
+	padding: 1%;
+	margin-top: 3%;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: #B59B7A;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #BDBEC2;
+	transition: 0.5 ease;
+}
+
+footer .copyright {
+	
+	font-size: 0.6em;
+}
+
+footer h3{
+	text-align: left;
+}
+footer {
+	background-color: #848484;
+	color: #d9d9d9;
+	height: 400px;
+	justify-content: center;
+	padding: 3%;
+}
+.icons{
+	padding: 2%;
+}
+.icons i{
+	padding-right: 2%;
+}
+.frow{
+	display: flex;
+	justify-content: center;
+	margin-right: 5%;
+}
+
+.links {
+	list-style: none;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+footer a:link, a:active{
+	color: #D9D9D9;
+	text-decoration: none;
+	font-weight: 500;
+}
+footer a:hover{
+	color: #BDBEC2 ;
+	transition: 0.3s ease;
+}
+footer a{
+	text-decoration: none;
+	color: #D9D9D9;
+}
+
+.footerf{
+	color: #474747;
+	font-size: 5em;
+	margin-right: 10%;
+}
+.foot{
+	align-items: center;
+	align-content: center;
+	text-align: center;
+}
+.column4{
+	min-width: 40%;
+}
+
+@media only screen and (max-width:996px){
+	html{
+		scroll-behavior: smooth;
+		scroll-padding-top:120px;
+	}
+	.logo{
+		position: relative;
+		top:0;
+	}
+	.btnhome{
+		margin-top: 50%;
+	}
+	.row{
+		display: block;
+	}
+	
+	.row2{
+		display: block;
+	}
+	.cardrow{
+		display: block;
+	}
+	.column{
+		display: block;
+		width: 100%;
+		padding: 1%;
+		margin: 10px auto;
+	}
+	.col{
+		display: block;
+		width: 100%;
+		padding: 1%;
+		margin: 10px auto;
+	}
+	.column3{
+		display: block;
+		width: 100%;
+		padding: 1%;
+		margin: 10px auto;
+	}
+	.column4{
+		display: block;
+		width: 100%;
+		padding: 1%;
+		margin: 10px auto;
+	}
+	.interview{
+		display: block;
+		width: 100%;
+		padding: 1%;
+		margin: 10px auto;
+	}
+	footer{
+		display: block;
+	}
+}
